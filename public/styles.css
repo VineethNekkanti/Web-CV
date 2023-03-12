@@ -288,33 +288,81 @@ margin-bottom: 50px;
   flex-wrap: wrap;
 }
 
-/* figure {
-    display: inline-block;
-    border: 1px;
-    margin: 20px;
-} */
+figure {
+    margin: 5px 20px;
 
-/* figure img {
-    vertical-align: top;
-}*/
+} 
+
 
 figure figcaption {
     border: 1px;
     text-align: center;
 }
 
+figure figcaption h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
 .nav-button {
   background-color: transparent;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   float: right;
   margin: 10px;
   border-radius: 10%;
+}
+
+.subpage-container h2{
+  color: #fff;
+  margin: 40px 20px 20px 20px;
+  font-size: 1.5rem;
+  line-height: 1.4em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 25px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-image {
+  text-align: center;
+}
+.card img{
+  width: 90%;
+  border-radius: 25px;
+  margin: 2px;
+}
+/* Add some padding inside the card container */
+.card-text {
+  padding: 2px 16px;
+}
+
+.card-text h4{
+  margin-top: 2px;
+  color: black;
+}
+
+.card-text p{
+  margin-bottom: 10px;
+  font-size: small;
+  color: black;
 }
 
 @media (max-width: 1000px) {
@@ -340,5 +388,8 @@ figure figcaption {
   .container {
     margin: 0px;
     grid-template-columns: repeat(1,1fr);
+  }
+  .subpage-container {
+    margin: 0px
   }
 }
