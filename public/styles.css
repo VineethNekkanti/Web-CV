@@ -215,6 +215,15 @@ margin-bottom: 50px;
   margin-top: 0;
   margin-bottom: 0;
 }
+.interests span{
+  color: #003147;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: xx-small;
+  letter-spacing: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .about .box{
   display: flex;
@@ -328,26 +337,28 @@ figure figcaption h5 {
   text-transform: uppercase;
 }
 
+.card-container{
+  display: flex;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 25px;
   margin: 10px;
   background-color: #fff;
-}
-
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  max-width: 350px;
+  max-height: 300px;
 }
 
 .card-image {
   text-align: center;
 }
+
 .card img{
   width: 90%;
   border-radius: 25px;
   margin: 2px;
+  max-height: 185px;
 }
 /* Add some padding inside the card container */
 .card-text {
@@ -363,6 +374,14 @@ figure figcaption h5 {
   margin-bottom: 10px;
   font-size: small;
   color: black;
+}
+
+@media (max-width: 1050px){
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
 }
 
 @media (max-width: 1000px) {
@@ -382,6 +401,15 @@ figure figcaption h5 {
   .skills .box{
     grid-template-columns: repeat(1,1fr);
   }
+  
+}
+
+@media (max-width: 700px){
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
 }
 
 @media (max-width: 415px) {
