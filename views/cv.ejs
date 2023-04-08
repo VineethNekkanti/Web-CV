@@ -7,18 +7,19 @@
         <div class="imgBox">
           <img src="images/Photo Suit.jpeg" alt="Profile Picture">
         </div>
-        <h2>Vineeth Nekkanti <br> <span>Area Sales Manager</span></h2>
+        <h2>Vineeth Nekkanti <br> <span>Area Sales Manager </span></h2>
+        <img src="images/company-logo.png" alt="Kenvue India" style="width: 150px;">
       </div>
       <div class="contactInfo">
         <h3 class="title">Contact Me</h3>
         <ul>
           <li>
             <span class="icon"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></span>
-            <span class="text">+91-7509306259</span>
+            <span class="text"><a href="tel:+917509306259">+91-7509306259</a></span>
           </li>
           <li>
             <span class="icon"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></span>
-            <span class="text"><a href="mailto:vineethnekkanti314@gmail.com?subject=Dear Vineeth, we would like to get in touch with you">vineethnekkanti314@gmail.com</a></span>
+            <span class="text"><a href="mailto:vineethnekkanti314@gmail.com?subject=We would like to get in touch with you">vineethnekkanti314@gmail.com</a></span>
           </li>
           <li>
             <span class="icon"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></span>
@@ -63,11 +64,14 @@
             <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
             <ul>
               <li>HTML/CSS</li>
-              <li>JS/Express</li>
-              <li>MongoDB</li>
+              <li>Node/Mongo</li>
+              <li>Python</li>
             </ul>
           </div>
         </div>
+        </div>
+        <div class="logo-title">
+          <h3 class="title">My Brand & Philosophy</h3>
         </div>
       <div class="logo">
           <img src="images/Vineeth.png" alt="">
@@ -78,10 +82,9 @@
     <div class="right-side">
       <div class="about">
         <h2 class="title2">About Me</h2>
-        <p>I am <b>one of the few Salesmen in this country who can code</b>. I like to learn new things and apply them to solve old problems.
-          I taught myself Business Presentations, Web Development and Python. Currently I am learning Data Science.
-        I do this because I enjoy it. And I believe if I can learn to learn new things by myself, I can learn anything.
-        And with that the world becomes my oyester!  </p>
+        <p>I am <b>a salesman who codes</b>! I like to learn new things and apply them to old problems. Because I believe <b>innovations happen at intersections</b></p>
+        <p>I taught myself Web Development, Python & Business Presentation. Currently, I am learning Data Science.</p>
+        <p>I do this because I enjoy it. In my opinion, the possibilities are endless if I keep learning new things.</p>
       </div>
 
       <div class="about">
@@ -93,8 +96,9 @@
           </div>
           <div class="text">
             <h4>Area Sales Manager, Kolkata</h4>
-            <p>> Developed ASM framework to hit the ground running <br>
-               > Created Digital Twin of Kolkata Retailer Base <br>
+            <p>> Developed <a class="popup" onclick="myFunction('popup1')">ASM Framework <span class="popuptext" id="popup1"><img src="images/asm.jpg" alt="ASM Framework"></span></a>
+              to hit the ground running <br>
+               > Created <a class="popup" onclick="myFunction('popup2')">Digital Twin <span class="popuptext" id="popup2"><img src="images/kolkata-map.png" alt="Digital Twin"></span></a> of Kolkata Retailer Base <br>
                > Increased retailer payout disbursement from 80% to 99% <br>
                > Induced process oriented growth in Business </p>
           </div>
@@ -108,8 +112,8 @@
           <div class="text">
             <h4>Management Trainee</h4>
             <p>> Handled a distribution house in Chennai <br>
-               > Imporved SSS ways of working <br>
-               > Achieved a growth of 20% in 6 short months <br></p>
+               > Improved SSS ways of working <br>
+               > Turned it around in 6 short months <br></p>
           </div>
         </div>
 
@@ -169,7 +173,7 @@
               <figure>
                 <img src="images/sales.gif" alt="Sales" height="120px" style="border-radius:50%; margin:15px;">
                 <figcaption>
-                  <h5>Sales & Stories</h5>
+                  <h5>Data Stories</h5>
                 </figcaption>
               </figure>
           </a>
@@ -187,7 +191,7 @@
           <figure>
             <img src="images/webdev.gif" alt="Sales" height="120px" style="border-radius:50%; margin:15px;">
             <figcaption>
-              <h5>Web Development</h5>
+              <h5>Python & Web Dev</h5>
             </figcaption>
           </figure>
         </a>
@@ -196,6 +200,13 @@
 
     </div>
   </div>
+  <script>
+  // When the user clicks on div, open the popup
+    function myFunction(X) {
+      const popupc = document.getElementById(X);
+      popupc.classList.toggle("show");
+    }
+  </script>
 </body>
 
 </html>
