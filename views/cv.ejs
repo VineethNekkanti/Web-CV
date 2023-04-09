@@ -96,13 +96,27 @@
           </div>
           <div class="text">
             <h4>Area Sales Manager, Kolkata</h4>
-            <p>> Developed <a class="popup" onclick="myFunction('popup1')">ASM Framework <span class="popuptext" id="popup1"><img src="images/asm.jpg" alt="ASM Framework"></span></a>
-              to hit the ground running <br>
-               > Created <a class="popup" onclick="myFunction('popup2')">Digital Twin <span class="popuptext" id="popup2"><img src="images/kolkata-map.png" alt="Digital Twin"></span></a> of Kolkata Retailer Base <br>
-               > Increased retailer payout disbursement from 80% to 99% <br>
+            <p>> Developed <button class="button ASM-button">ASM Framework</button>  to hit the ground running <br>
+               > Created <button class="button Digital-Twin-button">Digital Twin</button> of Kolkata Retailer Base <br>
+               > Developed Franchise Channel Growth Calculator <br>
+               > Aligned 7 silo programs into 1 Program System <br>
+               > Increased retailer payout usage from 80% to 99% <br>
                > Induced process oriented growth in Business </p>
           </div>
-        </div>
+
+              <dialog class="modal" id="ASM_modal">
+                <h2>The ASM Framework</h2>
+                <img src="images/asm.jpg" alt="">
+                <button class="button ASM-close-button">Click to close</button>
+              </dialog>
+
+              <dialog class="modal" id="Digital_Twin_modal">
+                <h2>Retailer Map - geotagged sales data</h2>
+                <img src="images/kolkata-map.png" alt="">
+                <button class="button Digital-Twin-close-button">Click to close</button>
+              </dialog>
+
+        </div>        
 
         <div class="box">
           <div class="year_company">
@@ -111,10 +125,33 @@
           </div>
           <div class="text">
             <h4>Management Trainee</h4>
-            <p>> Handled a distribution house in Chennai <br>
-               > Improved SSS ways of working <br>
-               > Turned it around in 6 short months <br></p>
+            <p>> Handled a <button class="button lynk-button">Distribution Start-Up</button> in Chennai <br>
+               > Developed 1st ever Route Tracking Dashboard <br>
+               > Turned it around in 4 short months <br>
+               > Helped launch <button class="button ntg-button">Neutrogena Bright Boost</button> in India <br>
+               > Helped launch 1st ever <button class="button aveeno-button">Aveeno Website</button><br>
+              </p>
           </div>
+
+              <dialog class="modal" id="lynk_modal">
+                <h2>Lynks Logistics - Leveraging Tech in FMCG Distribution</h2>
+                <img src="images/asm.jpg" alt="">
+                <button class="button lynk-close-button">Click to close</button>
+              </dialog>
+
+              <dialog class="modal" id="ntg_modal">
+                <h2>Neutrogena Launches Bright Boost in India</h2>
+                <img src="images/asm.jpg" alt="">
+                <button class="button ntg-close-button">Click to close</button>
+              </dialog>
+
+              <dialog class="modal" id="aveeno_modal">
+                <h2>Aveeno Homepage</h2>
+                <img src="images/asm.jpg" alt="">
+                <button class="button aveeno-close-button">Click to close</button>
+              </dialog>
+
+
         </div>
 
         <div class="box">
@@ -125,9 +162,16 @@
           <div class="text">
             <h4>Graduate Engineering Trainee</h4>
             <p>> Understood the basics of Construction Business <br>
-            > Worked on the Largest STP in Asia <br>
-          > Handled field safety for a 350 people strong Site <br></p>
+               > Helped build <button class="button stp-button">Largest Sewage Treatment Plant</button> in India  <br>
+               > Handled field safety for a 350 people work site <br></p>
           </div>
+
+          <dialog class="modal" id="stp_modal">
+            <h2>Coronation Pillar - India's Largest STP in Delhi</h2>
+            <img src="images/stp.png" alt="">
+            <button class="button stp-close-button">Click to close</button>
+          </dialog>
+
         </div>
       </div>
 
@@ -201,13 +245,69 @@
 
     </div>
   </div>
-  <script>
-  // When the user clicks on div, open the popup
-    function myFunction(X) {
-      const popupc = document.getElementById(X);
-      popupc.classList.toggle("show");
-    }
-  </script>
 </body>
+
+<script>
+const ASM_modal = document.querySelector("#ASM_modal");
+const ASM_button = document.querySelector(".ASM-button");
+const ASM_closeModal = document.querySelector(".ASM-close-button");
+ASM_button.addEventListener("click", () => {
+ASM_modal.showModal();
+});
+ASM_closeModal.addEventListener("click", () => {
+ASM_modal.close();
+});
+
+const Digital_Twin_modal = document.querySelector("#Digital_Twin_modal");
+const Digital_Twin_button = document.querySelector(".Digital-Twin-button");
+const Digital_Twin_closeModal = document.querySelector(".Digital-Twin-close-button");
+Digital_Twin_button.addEventListener("click", () => {
+Digital_Twin_modal.showModal();
+});
+Digital_Twin_closeModal.addEventListener("click", () => {
+Digital_Twin_modal.close();
+});
+
+const lynk_modal = document.querySelector("#lynk_modal");
+const lynk_button = document.querySelector(".lynk-button");
+const lynk_closeModal = document.querySelector(".lynk-close-button");
+lynk_button.addEventListener("click", () => {
+lynk_modal.showModal();
+});
+lynk_closeModal.addEventListener("click", () => {
+lynk_modal.close();
+});
+
+const ntg_modal = document.querySelector("#ntg_modal");
+const ntg_button = document.querySelector(".ntg-button");
+const ntg_closeModal = document.querySelector(".ntg-close-button");
+ntg_button.addEventListener("click", () => {
+ntg_modal.showModal();
+});
+ntg_closeModal.addEventListener("click", () => {
+ntg_modal.close();
+});
+
+const aveeno_modal = document.querySelector("#aveeno_modal");
+const aveeno_button = document.querySelector(".aveeno-button");
+const aveeno_closeModal = document.querySelector(".aveeno-close-button");
+aveeno_button.addEventListener("click", () => {
+aveeno_modal.showModal();
+});
+aveeno_closeModal.addEventListener("click", () => {
+aveeno_modal.close();
+});
+
+const stp_modal = document.querySelector("#stp_modal");
+const stp_button = document.querySelector(".stp-button");
+const stp_closeModal = document.querySelector(".stp-close-button");
+stp_button.addEventListener("click", () => {
+stp_modal.showModal();
+});
+stp_closeModal.addEventListener("click", () => {
+stp_modal.close();
+});
+
+</script>
 
 </html>
