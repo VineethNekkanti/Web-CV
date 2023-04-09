@@ -127,27 +127,40 @@
             <h4>Management Trainee</h4>
             <p>> Handled a <button class="button lynk-button">Distribution Start-Up</button> in Chennai <br>
                > Developed 1st ever Route Tracking Dashboard <br>
-               > Turned it around in 4 short months <br>
+               > Developed <button class="button book-button">Comprehensive RDSSM Booklet</button> <br>
+               > <button class="button turn-button">Turned it around</button> in 4 short months <br>
                > Helped launch <button class="button ntg-button">Neutrogena Bright Boost</button> in India <br>
                > Helped launch 1st ever <button class="button aveeno-button">Aveeno Website</button><br>
               </p>
           </div>
 
               <dialog class="modal" id="lynk_modal">
-                <h2>Lynks Logistics - Leveraging Tech in FMCG Distribution</h2>
-                <img src="images/asm.jpg" alt="">
+                <a href="https://yourstory.com/2018/04/truck-aggregator-lynk-logistics-steers-smes-individuals-last-mile-connectivity"><h2>Lynk Logistics - Leveraging Tech in FMCG Distribution</h2></a>
+                <img src="images/lynkteam.png" alt="">
                 <button class="button lynk-close-button">Click to close</button>
               </dialog>
 
+              <dialog class="modal" id="book_modal">
+                <h2>A comprehensive On-Field Guide for RDSSMs</h2>
+                <img src="images/rdssm.jpg" alt="">
+                <button class="button book-close-button">Click to close</button>
+              </dialog>
+
+              <dialog class="modal" id="turn_modal">
+                <h2>Growth across all key parameters</h2>
+                <img src="images/turnaround.jpg" alt="">
+                <button class="button turn-close-button">Click to close</button>
+              </dialog>
+
               <dialog class="modal" id="ntg_modal">
-                <h2>Neutrogena Launches Bright Boost in India</h2>
-                <img src="images/asm.jpg" alt="">
+                <a href="https://www.nykaa.com/neutrogena-bright-boost-gel-cream/p/5290326?skuId=5290325"><h2>Shine Bright with Bright Boost</h2></a>
+                <img src="images/bb.jpg" alt="">
                 <button class="button ntg-close-button">Click to close</button>
               </dialog>
 
               <dialog class="modal" id="aveeno_modal">
-                <h2>Aveeno Homepage</h2>
-                <img src="images/asm.jpg" alt="">
+                <a href="https://www.aveeno.in/"><h2>Aveeno Website</h2></a>
+                <img src="images/aveeno.png" alt="">
                 <button class="button aveeno-close-button">Click to close</button>
               </dialog>
 
@@ -167,7 +180,7 @@
           </div>
 
           <dialog class="modal" id="stp_modal">
-            <h2>Coronation Pillar - India's Largest STP in Delhi</h2>
+            <a href="https://timesofindia.indiatimes.com/city/delhi/cm-inspects-delhis-biggest-waste-water-treatment-plant/articleshow/91949301.cms"><h2>Coronation Pillar - India's Largest STP</h2></a>
             <img src="images/stp.png" alt="">
             <button class="button stp-close-button">Click to close</button>
           </dialog>
@@ -276,6 +289,26 @@ lynk_modal.showModal();
 });
 lynk_closeModal.addEventListener("click", () => {
 lynk_modal.close();
+});
+
+const book_modal = document.querySelector("#book_modal");
+const book_button = document.querySelector(".book-button");
+const book_closeModal = document.querySelector(".book-close-button");
+book_button.addEventListener("click", () => {
+book_modal.showModal();
+});
+book_closeModal.addEventListener("click", () => {
+book_modal.close();
+});
+
+const turn_modal = document.querySelector("#turn_modal");
+const turn_button = document.querySelector(".turn-button");
+const turn_closeModal = document.querySelector(".turn-close-button");
+turn_button.addEventListener("click", () => {
+turn_modal.showModal();
+});
+turn_closeModal.addEventListener("click", () => {
+turn_modal.close();
 });
 
 const ntg_modal = document.querySelector("#ntg_modal");
