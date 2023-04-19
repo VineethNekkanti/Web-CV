@@ -95,9 +95,17 @@ body{
 }
 .contactInfo ul li{
   list-style: none;
-  cursor: pointer;
+  cursor: arrow;
   margin: 10px 0;
 }
+
+/* To remove pointer on education list */
+.education ul li, .languages ul li {
+  list-style: none;
+  cursor: default;
+  margin: 10px 0;
+}
+
 .contactInfo ul li .icon{
   display: inline-block;
   color: #03a9f4;
