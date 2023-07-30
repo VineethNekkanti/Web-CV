@@ -188,6 +188,8 @@ body{
   color: #03a9f4;
 }
 
+/* Logo Section */
+
 .logo {
   display: grid;
   justify-content: center;
@@ -198,6 +200,8 @@ body{
   height: auto;
   width: 250px;
 }
+
+/* Right Container Styling */
 
 .container .right-side{
   background-color: #fff;
@@ -270,6 +274,8 @@ margin-bottom: 50px;
   font-size: 1em;
 }
 
+/* Professional Skills Section */
+
 .skills .box{
   display: grid;
   grid-template-columns: 150px 1fr;
@@ -279,8 +285,9 @@ margin-bottom: 50px;
 }
 
 .skills .box h4{
-  color: #848c90;
-  font-weight: 600;
+  color: #f0f0f0;
+  font-weight: 300;
+  font-size: 0.9rem;
   text-transform: uppercase;
   margin: 7.5px 0;
 }
@@ -299,6 +306,14 @@ margin-bottom: 50px;
   height: 100%;
   background: #03a9f4;
 }
+
+.credly-badges{
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 
 .Passion-Icons{
   display: flex;
