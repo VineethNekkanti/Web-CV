@@ -423,7 +423,7 @@ figure figcaption h5 {
 }
 
 /* Handling Image pop ups */
-.about .box .text p button, .ASM-close-button, .Digital-Twin-close-button, .lynk-close-button, 
+.about .box .text p button, .ASM-close-button, .Digital-Twin-close-button, .One-Program-close-button, .lynk-close-button, 
 .ntg-close-button, .aveeno-close-button, .stp-close-button, .turn-close-button, .book-close-button  {
    border: 0;
    cursor: pointer;

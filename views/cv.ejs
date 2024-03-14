@@ -110,8 +110,8 @@
     <div class="right-side">
       <div class="about">
         <h2 class="title2">About Me</h2>
-        <p>I am <b>a salesman who codes</b>! I like to learn new things and apply them to old problems. Because I believe <b>innovations happen at intersections</b></p>
-        <p>I taught myself Web Development, Python & Business Presentation. Currently, I am learning Data Analytics.</p>
+        <p>I am <b>a salesman who codes</b>! I like to learn new things and apply them to old problems, because I believe <b>innovations happen at intersections</b></p>
+        <p>I taught myself Web Development, Business Presentation & Data Analytics. Currently, I am building a forecasting model for our sales in Kolkata!.</p>
         <p>I do this because I enjoy it. In my opinion, the possibilities are endless if I keep learning new things.</p>
       </div>
 
@@ -125,10 +125,10 @@
           </div>
           <div class="text">
             <h4>Area Sales Manager, Kolkata</h4>
-            <p>> Developed <button class="button ASM-button">ASM Framework</button>  to hit the ground running <br>
+            <p>> Developed top store forecasting model for Kolkata <br>
+               > Developed <button class="button ASM-button">ASM Framework</button>  to hit the ground running <br>
                > Created <button class="button Digital-Twin-button">Digital Twin</button> of Kolkata Retailer Base <br>
-               > Developed Franchise Channel Growth Calculator <br>
-               > Saved <b>200 Man-Hrs/Qtr</b> with my 1 Program Tracker<br>
+               > Saved <b>200 Man-Hrs/Qtr</b> with my <button class="button One-Program-button">1 Program Tracker</button><br>
                > Increased retailer payout usage from <b>80% to 99%</b> </p>
           </div>
 
@@ -144,7 +144,13 @@
                 <button class="button Digital-Twin-close-button">Click to close</button>
               </dialog>
 
-        </div>        
+              <dialog class="modal" id="One_Program_modal">
+                <h2>Comprehensive Target Setting & Tracking</h2>
+                <img src="images/oneprogram.jpg" alt="">
+                <button class="button One-Program-close-button">Click to close</button>
+              </dialog>
+
+        </div>
 
         <div class="box">
           <div class="year_company">
@@ -269,7 +275,7 @@
         </figure>
       </a>
       </div>
-      
+
       </div>
 
 
@@ -330,6 +336,16 @@ Digital_Twin_modal.showModal();
 });
 Digital_Twin_closeModal.addEventListener("click", () => {
 Digital_Twin_modal.close();
+});
+
+const One_Program_modal = document.querySelector("#One_Program_modal");
+const One_Program_button = document.querySelector(".One-Program-button");
+const One_Program_closeModal = document.querySelector(".One-Program-close-button");
+One_Program_button.addEventListener("click", () => {
+One_Program_modal.showModal();
+});
+One_Program_closeModal.addEventListener("click", () => {
+One_Program_modal.close();
 });
 
 const lynk_modal = document.querySelector("#lynk_modal");
